@@ -1,0 +1,36 @@
+[package]
+name = "cuisine"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+chrono = "0.4.38"
+dotenv = "0.15.0"
+dotenv_codegen = "0.15.0"
+gloo = {version = "0.11.0", features = ["utils"]}
+js-sys = "0.3.69"
+reqwasm = "0.5.0"
+serde = "1.0.210"
+serde_json = "1.0.128"
+stylist = { version = "0.13", features = ["yew", "parser", "macros"] }
+thiserror = "1.0.64"
+url = "2.5.2"
+
+
+
+
+wasm-bindgen = "0.2.93"
+wasm-bindgen-futures = "0.4.43"
+web-sys = {version = "0.3.70",features = ["HtmlInputElement", "HtmlSelectElement", "HtmlDocument","HtmlAnchorElement","RequestCredentials"]}
+yew = {version = "0.21.0",features = ["csr"]}
+yew-hooks = "0.3.2"
+yew-router = "0.18.0"
+yewdux = "0.10.0"
+
+
+
+[profile.dev]
+opt-level = 3
+
+[profile.release]
+opt-level = 3
